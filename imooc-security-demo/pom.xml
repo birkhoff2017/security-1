@@ -16,7 +16,6 @@
 			<version>${imooc.security.version}</version>
 		</dependency>
 		
-		<!-- 
 		<dependency>
 			<groupId>com.imooc.security</groupId>
 			<artifactId>imooc-security-authorize</artifactId>
@@ -27,7 +26,6 @@
 			<artifactId>imooc-security-app</artifactId>
 			<version>${imooc.security.version}</version>
 		</dependency>
-		 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -67,6 +65,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>1.3.3.RELEASE</version>
+				<configuration>
+					<mainClass>com.imooc.DemoApplication</mainClass>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
@@ -78,4 +79,5 @@
 		</plugins>
 		<finalName>demo</finalName>
 	</build>
+
 </project>
